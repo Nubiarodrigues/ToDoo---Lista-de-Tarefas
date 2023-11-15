@@ -1,0 +1,138 @@
+@import url('https://fonts.cdnfonts.com/css/sunday-grapes');
+@import url('https://fonts.cdnfonts.com/css/hussar');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hussar', sans-serif;         
+    background: url('../IMG/fundo.jpg');
+    background-size: cover;                               
+} 
+
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3%;
+}
+
+.relogio  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    padding: 2%;
+    font-size: 30px;
+    background-color: #94D155;
+    color: black;
+    width: 10%;
+    height: 35px;
+    font-family: 'Sunday Grapes', sans-serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+
+.header-lista {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: auto;
+}
+
+input {
+    height: 80px;
+    width: 85%;
+    font-size: 1.5rem;
+    padding-left: 5%;
+    border: none;
+    background-color: #FAFFF0;
+
+}
+
+button#adicionar {
+    width: 15%;
+    height: 80px;
+    cursor: pointer;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    background-color: #7EC445;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+
+.item, .itemClicado {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item.clicado {
+    background: #d4f6d9;
+}
+
+.item.clicado .itemNome {
+    text-decoration: line-through;
+    color: #3B3936;
+  }
+
+.itemIcone {
+    font-size: 2rem;
+}
+
+.itemNome {
+    flex:  33.3%;
+    font: 20px;
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+.itemBotao{
+    flex:  2%;
+}
+
+#deletar{
+    background-color: brown;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+ 
